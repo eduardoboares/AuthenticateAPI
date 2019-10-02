@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ./node_modules/.bin/ava -v",
+    "test": "nyc node_modules/.bin/ava src/testes/*.test.js --verbose",
+    "test:watch": "node_modules/.bin/ava --verbose --ewatch",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "standard": "standard index.js"
   },

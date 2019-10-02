@@ -8,4 +8,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 require('./src/app/controllers/index')(app);
 
-app.listen(3000);
+console.log("Escutando na porta", process.env.port || 3000);
+
+app.listen(process.env.port || 3000);
