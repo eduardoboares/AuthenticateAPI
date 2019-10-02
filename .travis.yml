@@ -9,5 +9,5 @@ after_success:
   deploy:
   provider: heroku
   api_key:
-    secure: "cec6193c-d20d-4701-82bf-30f1c72c3402"
+    secure: cec6193c-d20d-4701-82bf-30f1c72c3402
     app: ajudabr
