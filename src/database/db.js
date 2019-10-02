@@ -1,3 +1,3 @@
 module.exports = {
-    DB: 'mongodb://localhost:27017/noderest'
+    DB: 'mongodb+srv://dev:dev@cluster0-uxdmg.mongodb.net/test?retryWrites=true&w=majority'
 }
