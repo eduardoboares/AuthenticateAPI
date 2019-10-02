@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc ./node_modules/.bin/ava -v",
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "standard": "standard index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,20 @@
     "nodemailer": "^6.3.0",
     "nodemailer-express-handlebars": "^3.1.0",
     "nodemon": "^1.19.3",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "travis": "^0.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "co-exec": "^1.0",
+    "codecov": "^1.0.1",
+    "ghooks": "^1.2.4",
+    "nyc": "^10.0.0",
+    "standard": "^8.4.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run standard"
+    }
   }
 }
