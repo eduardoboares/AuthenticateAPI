@@ -16,7 +16,7 @@ function generateToken(params = {}) {
     });
 }
 
-router.post('/',async (req, res)=> {
+router.get('/',async (req, res)=> {
     return res.status(200).send({ api: 'Aplicação em execução.' });
 });
 
