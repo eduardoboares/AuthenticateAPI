@@ -17,7 +17,7 @@ function generateToken(params = {}) {
 }
 
 router.post('/',async (req, res)=> {
-    return res.send("Api v1 on.");
+    return res.status(200).send({ api: 'Aplicação em execução.' });
 });
 
 router.post('/register', async (req, res) => {
