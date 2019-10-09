@@ -16,7 +16,7 @@ function generateToken(params = {}) {
     });
 }
 
-router.get('https://ajudabr.herokuapp.com/', function (req, res){
+express.get('https://ajudabr.herokuapp.com/', function (req, res){
     res.send("Bem vindo a API de autenticação!");
 });
 
