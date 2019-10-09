@@ -11,7 +11,7 @@ const User = require('../models/user');
 const router = express.Router();
 
 function generateToken(params = {}) {
-    return jwt.sign(params, authConfig.secret, {
+    return jwt.sign(params, process.env.SECRET, {
         expiresIn: 86400,
     });
 }
