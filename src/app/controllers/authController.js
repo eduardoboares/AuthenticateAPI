@@ -16,6 +16,10 @@ function generateToken(params = {}) {
     });
 }
 
+router.get('/', async (req, res) => {
+    return res.status(200).send({ api: 'Aplicação em execução.' });
+});
+
 router.post('/register', async (req, res) => {
     const{ email } = req.body;
     try {
