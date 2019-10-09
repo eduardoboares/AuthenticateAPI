@@ -16,10 +16,6 @@ function generateToken(params = {}) {
     });
 }
 
-express.get('/', function (req, res){
-    res.send("Bem vindo a API de autenticação!");
-});
-
 router.post('/register', async (req, res) => {
     const{ email } = req.body;
     try {
