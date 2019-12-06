@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "nyc node_modules/.bin/ava src/testes/*.test.js --verbose",
     "test:watch": "node_modules/.bin/ava --verbose --ewatch",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
@@ -32,7 +33,10 @@
     "codecov": "^1.0.1",
     "ghooks": "^1.2.4",
     "nyc": "^10.0.0",
-    "standard": "^8.4.0"
+    "standard": "^8.4.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-obfuscator": "^0.18.7"
   },
   "config": {
     "ghooks": {
