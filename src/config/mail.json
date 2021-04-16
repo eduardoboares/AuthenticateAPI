@@ -1,6 +1,6 @@
 {
-    "host": "smtp.mailtrap.io",
-    "port": "2525",
-    "user": "eec922bf615996",
-    "pass": "a60205671daf6b"
+    "host": process.env.MAIL_HOST,
+    "port": process.env.MAIL_PORT,
+    "user": process.env.MAIL_USER,
+    "pass": process.env.MAIL_PASS
 }
